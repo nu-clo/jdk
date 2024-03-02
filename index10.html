@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jdktechnologies - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Century;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(b.jpg);
+            height: 100vh;
+            background-size: cover;
+            min-height: 100px;
+        }
+
+        .logo {
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        nav {
+            display: flex;
+            padding: 1% 2%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0%;
+        }
+
+        nav img {
+            width: 150px;
+            margin-bottom: 0%;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 17px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+            top: 10%;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 18px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+        ul li a:hover {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        .title1 {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+            right: 0%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+        }
+
+        .title1 h1 {
+            font-size: 50px;
+            font-style: initial;
+            margin-bottom: 45px;
+            margin-left: 15px;
+            margin-right: 0;
+        }
+
+        .title1 h2 {
+            color: rgb(249, 249, 249);
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align-last: right;
+        }
+
+        .cta-buttons {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .content-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: bottom;
+            width: 100%;
+            bottom: 0;
+            position: bottom;
+        }
+
+        .column {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .column img {
+            width: 20%;
+            height: auto;
+        }
+
+        .attractive-text {
+            font-size: 25px;
+            color: #cbd411;
+            margin-top: 10px;
+            font-style: initial;
+        }
+
+        nav .fa {
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+    footer {
+      position: relative;
+      width: 100%;
+      bottom: 0;
+
+    }
+    header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(b.jpg);
+            height: 100vh;
+            background-size: cover;
+            min-height: 50px;
+        }
+            .title1 h1 {
+                font-size: 25px;
+                font-style: initial;
+                margin-bottom: 25px;
+                margin-left: 15px;
+                text-align: start;
+                margin-right: 0%;
+            }
+
+            .title1 h2 {
+                color: rgb(249, 249, 249);
+                font-size: 14px;
+                font-style: italic;
+                margin-top: 8px;
+            }
+
+            nav .fa {
+                display: block;
+                font-size: 25px;
+                color: #fff;
+            }
+
+            nav ul {
+                float: right;
+                background: #4CAF50;
+                position: fixed;
+                top: 0;
+                right: -100px;
+                width: 100px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 1;
+                transition: right 0.5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 15px;
+                font-size: 12px;
+            }
+
+            nav ul .fa {
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                cursor: pointer;
+            }
+        }
+        .column:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.images img {
+    width: 300px; /* Increased size */
+    height: auto;
+    margin: 0; /* No margin */
+}
+.images img:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo1.jpg"></a>
+                <div class="nav-links">
+
+                    <ul id="sidemenu">
+                        <li><a href="index10.html">Home</a></li>
+                        <li><a href="index11.html">Services</a></li>
+                        <li><a href="index12.html">About</a></li>
+                        <li><a href="index13.html">Contact</a></li>
+                        <i class="fa fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+        </section>
+        <section class="title1">
+            <h1>Innovation is a journey that starts with a brilliant strategy and continues through laser-focused execution.</h1>
+            <h2>We’ll help you apply the power of technology to innovate, disrupt and outperform.</h2>
+            <div class="cta-buttons">
+                <button onclick="scrollToContent()">know More</button>
+            </div>
+        </section>
+    </header>
+    
+    <section class="main-content">
+        <div class="content-columns">
+            <div class="column">
+                <img src="tick.png" alt="Mobile App Development">
+                <h3>Simple</h3>
+                <p>
+                    We take a lean approach to product management to eliminate delays, reduce project costs and speed up time to market.
+                </p>
+            </div>
+            <div class="column">
+                <img src="bulb.ipg.jpeg" alt="Why Choose Us?">
+                <h3>Innovative</h3>
+                <p>
+                    We use innovative tools, technologies, and development methods to build solutions that achieve agility, efficiency, and growth at scale.
+                </p>
+            </div>
+            <div class="column">
+                <img src="graph.ipg.jpeg" alt="Our Approach">
+                <h3>Effective</h3>
+                <p>
+                    With our True Systems methodology, we build integrated solutions that perform, scale and measure up against business KPIs.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="images">
+        <img src="p1.jpg" alt="Image 1">
+        <img src="p2.jpg" alt="Image 2">
+        <img src="p3.jpg" alt="Image 3">
+        <img src="p4.jpg" alt="Image 1">
+        <img src="p5.jpg" alt="Image 2">
+        <img src="p6.jpg" alt="Image 3">
+        <img src="p7.jpg" alt="Image 1">
+        <img src="p8.jpg" alt="Image 2">
+        
+    </div>
+
+    <!-- Add more sections/content as needed -->
+
+    <!-- Copyright Notice -->
+    <footer>
+        <p>&copy; 2024 jdk technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToContent() {
+            var contentSection = document.querySelector('.main-content');
+            contentSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemeu.style.right = "-100px";
+        }
+    
+        // Function to scroll to the bottom of the page
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-100px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>jdktechnologies - About Us</title>
+   <style>
+      * {
+          margin: 0;
+          padding: 0;
+          font-family: Century;
+      }
+
+      header {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(jdk.jpg);
+          height: 100vh;
+          background-size: cover;
+          min-height: 100px;
+      }
+
+      .logo {
+          margin-left: 20px;
+          display: inline-block;
+      }
+
+      nav {
+          display: flex;
+          padding: 1% 2%;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 0%;
+      }
+
+      nav img {
+          width: 150px;
+          margin-bottom: 0%;
+      }
+
+      ul {
+          list-style-type: none;
+          font-size: 17px;
+      }
+
+      ul li {
+          display: inline-block;
+          margin-right: 20px;
+          top: 10%;
+      }
+
+      ul li a {
+          text-decoration: none;
+          color: white;
+          padding: 5px 18px;
+          border: 1px solid transparent;
+          transition: 0.5s ease;
+      }
+
+      ul li a:hover {
+          background-color: lightskyblue;
+        
+          color: black;
+      }
+
+      .title1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: rgb(255, 255, 255);
+          padding: 30px;
+      }
+
+      .title1 h1 {
+          font-size: 70px;
+          font-style: normal;
+          margin-bottom: 15px;
+      }
+
+      .title1 h2 {
+          color: rgb(249, 249, 249);
+          font-size: 22px;
+          font-style: italic;
+          margin-top: 10px;
+      }
+
+      .cta-buttons {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #45a049;
+      }
+
+      .main-content {
+          padding: 20px;
+      }
+
+      .content-columns {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+      }
+
+      .column {
+          flex-basis: 30%;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+
+      footer {
+          background-color: rgb(25, 24, 24);
+          color: white;
+          text-align: center;
+          padding: 10px;
+          position: bottom;
+          width: 100%;
+          bottom: 0;
+          position: bottom;
+      }
+
+      .column img {
+          width: 40%;
+          height: auto;
+      }
+
+      .attractive-text {
+          font-size: 25px;
+          color: #cbd411;
+          margin-top: 10px;
+          font-style: initial;
+      }
+      ul1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom:0%;
+  transform: translate(-50%, -50%);
+}
+
+ul1 li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul1 li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #1004f8;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #210303;
+}
+
+ul1 li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul1 li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+ul1 li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+      nav .fa {
+          display: none;
+      }
+      @media only screen and (max-width: 600px) {
+          .title1 h1 {
+              font-size: 20px;
+              font-style: initial;
+              margin-bottom: 25px;
+              margin-left: 15px;
+          }
+          .title1 h2 {
+              color: rgb(249, 249, 249);
+              font-size: 14px;
+              font-style: italic;
+              margin-top: 8px;
+          }
+          nav .fa {
+              display: block;
+              font-size: 25px;
+              color: #fff;
+          }
+          nav ul {
+              float: right;
+              background: #4CAF50;
+              position: fixed;
+              top: 0;
+              right: -100px;
+              width: 100px;
+              height: 100vh;
+              padding-top: 50px;
+              z-index: 1;
+              transition: right 0.5s;
+          }
+          nav ul li {
+              display: block;
+              margin: 15px;
+              font-size: 12px;
+          }
+          nav ul .fa {
+              position: absolute;
+              top: 25px;
+              left: 25px;
+              cursor: pointer;
+          }
+
+          .column {
+              text-align: center;
+              margin-bottom: 40px;
+              font: 12px;
+          }
+      }
+   </style>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo1.jpg"></a>
+                <div class="nav-links">
+                    <ul id="sidemenu">
+                        <li><a href="index10.html">Home</a></li>
+                        <li><a href="index11.html">Services</a></li>
+                        <li><a href="index12.html">About</a></li>
+                        <li><a href="index13.html">Contact</a></li>
+                        <i class="fa fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+        </section>
+        <section class="title1">
+            <h1>About us</h1>
+            <h2>Find out how JDK can help your company build simple, innovative, and effective software solutions.</h2>
+            <div class="cta-buttons">
+                <button onclick="scrollToContent()">click here !</button>
+                <p class="attractive-text">Discover the Future of Software Development</p>
+            </div>
+        </section>
+    </header>
+
+    <section class="main-content">
+        <div class="content-columns">
+            <div class="column">
+                <img src="wap.png" alt="Mobile App Development">
+                <h3>Mobile App Development</h3>
+                <p>
+                    We specialize in creating cutting-edge mobile applications tailored to meet the unique needs of your business.
+                </p>
+            </div>
+            <div class="column">
+                <img src="why.jpg" alt="Why Choose Us?">
+                <h3>Why Choose Us?</h3>
+                <p>
+                    Our team of skilled developers and designers is dedicated to delivering high-quality, user-friendly mobile apps that drive your business forward.
+                </p>
+            </div>
+            <div class="column">
+                <img src="app.jpg" alt="Our Approach">
+                <h3>Our Approach</h3>
+                <p>
+                    At JDK, we follow a comprehensive approach to mobile app development, ensuring a seamless user experience and robust functionality.
+                </p>
+            </div>
+        </div>
+        <ul1>
+            <li><a href="#"><i class="fas fa-mail-bulk"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+
+        </ul1>
+    </section>
+    <!-- Add more sections/content as needed -->
+
+    <!-- Copyright Notice -->
+    <footer>
+        <p>&copy; 2024 jdk technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToContent() {
+            var contentSection = document.querySelector('.main-content');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+     <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-100px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>jdktechnologies - Contact Us</title>
+   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      /* Your CSS styles here */
+      * {
+          margin: 0;
+          padding: 0;
+          font-family: Century;
+      }
+      header {
+        height: 8vh;
+        background-image: url('b.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+        background-size: cover;
+        min-height: 8px;
+        margin-bottom: 40%;
+    }
+      .logo {
+          margin-left: 20px;
+      }
+
+      nav {
+          display: flex;
+          padding: 1% 2%;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 0%;
+      }
+
+      nav img {
+          width: 150px;
+          margin-bottom: 0%;
+      }
+
+      ul {
+          list-style-type: none;
+          font-size: 17px;
+      }
+
+      ul li {
+          display: inline-block;
+          margin-right: 20px;
+          top:10%;
+      }
+
+      ul li a {
+          text-decoration: none;
+          color: white;
+          padding: 5px 18px;
+          border: 1px solid transparent;
+          transition: 0.5s ease;
+      }
+
+      ul li a:hover {
+          background-color: lightskyblue;
+          color: black;
+      }
+
+      .title1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: rgb(19, 60, 81);
+          padding: 20px;
+      }
+      .title1 h1 {
+          font-size: 40px;
+          font-style: normal;
+          margin-bottom: 15px;
+      }
+      .title1 h2 {
+          color: rgb(8, 38, 102);
+          font-size: 16px;
+          font-style: italic;
+          margin-top: 10px;
+      }
+      .contact-button {
+    display: inline-block;
+    text-decoration: none;
+
+    color: rgb(5, 5, 5);
+    border: 1px solid #131313;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: transparent;
+    margin-top: 70px; /* Increase margin to create more space */
+    margin-right: 2px; /* Adjust margin as needed */
+}
+
+      .contact-button:hover {
+          background-color: #62da27;
+          box-sizing: border-box;
+          color: rgb(6, 6, 5);
+      }
+      footer {
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          position: bottom;
+          width: 100%;
+          bottom: 0;
+          position: bottom; /* Fixed position at the bottom */
+      }
+      nav .fa{
+          display: none;
+      }
+      .maps-and-images-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 20px;
+      }
+      .maps-container {
+        text-align: center; /* Center the content horizontally */
+        position: relative;
+        width: 70%; /* Take up 50% of the container's width */
+        height: 500px; /* Adjust height as needed */
+        margin-right: 10px; /* Add some space between the map and the images */
+}
+
+      .go-directions-button {
+          color: black;
+          font-size: 30px;
+          position: absolute;
+          top: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 999;
+      }
+      .google-maps {
+          width: 90%;
+          height: 100%; /* Adjust height as needed */
+      }
+      .images-container {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 20px;
+      }
+      .images-container img:hover {
+      transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+      .images-container img {
+          width: 230px;
+          height: auto;
+          margin: 0px;
+      }
+      .maps-and-images-container {
+      display: flex;
+      flex-direction: row; /* Align items horizontally */
+      align-items: flex-start; /* Align items to the start of the container */
+      margin-top: 10px;
+}
+ 
+/* Center the form */
+.form-section {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+/* Style for form inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4c24df;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #25185f;
+}
+
+
+      /* Media queries for responsive design */
+      @media only screen and (max-width: 600px) {
+          .title1 h1 {
+              font-size: 25px;
+              margin-bottom: 20px;
+          }
+          .title1 h2 {
+              font-size: 14px;
+          }
+          .contact-button {
+              font-size: 14px;
+          }
+          .go-directions-button {
+              font-size: 30px;
+          }
+          .images-container img {
+              width: 100px;
+          }
+      }
+
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+          .title1 h1 {
+              font-size: 30px;
+              margin-bottom: 20px;
+          }
+          .title1 h2 {
+              font-size: 15px;
+          }
+          .contact-button {
+              font-size: 15px;
+          }
+          .go-directions-button {
+              font-size: 40px;
+          }
+      }
+   </style>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo1.jpg"></a>
+                <div class="nav-links">
+                    <ul id="sidemenu">
+                        <li><a href="index10.html">Home</a></li>
+                        <li><a href="index11.html">Services</a></li>
+                        <li><a href="index12.html">About</a></li>
+                        <li><a href="index13.html">Contact</a></li>
+                        <i class="fa fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+        </section>
+        <section class="title1">
+            <h1>Contact Us</h1>
+            <h2>Find out how JDK can help your company build simple, innovative, and effective software solutions.</h2>
+            
+            <a href="#" class="contact-button" id="whatsapp-button">Contact Us on WhatsApp</a>
+        </section>
+
+        
+    </header>
+    <!-- Google Maps and Images -->
+    <div class="maps-and-images-container">
+        <div class="maps-container">
+            <a href="#" class="go-directions-button" onclick="getDirections(12.97, 77.715)">Go Directions</a>
+            <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0245783522334!2d77.715!3d12.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM5JzU1LjciTiA3N8KwMjknMTYuOSJF!5e0!3m2!1sen!2sin!4v1644239958879!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="images-container">
+            <img src="hcl.jpg" alt="Image 1">
+            <img src="hcl2.jpg" alt="Image 2">
+            <img src="hcl3.jpg" alt="Image 3">
+            
+        
+        </div>
+    </div>
+
+    <!-- Form Section -->
+<section class="form-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 jdk technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function getLocation() {
+          if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+              alert("Geolocation is not supported by this browser.");
+          }
+      }
+      function showPosition(position) {
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+          var permanentLocation = {lat: 12.97, lng: 77.715}; // Example permanent location (Bangalore)
+          var userLocation = {lat: lat, lng: lon};
+          var distance = getDistance(userLocation.lat, userLocation.lng, permanentLocation.lat, permanentLocation.lng);
+          
+          if (distance > 50) {
+              window.open("https://www.google.com/maps/dir/?api=1&destination=" + permanentLocation.lat + "," + permanentLocation.lng);
+          } else {
+              window.open("https://www.google.com/maps?q=" + permanentLocation.lat + "," + permanentLocation.lng);
+          }
+      }
+      function getDistance(lat1, lon1, lat2, lon2) {
+          var R = 6371; // Radius of the earth in km
+          var dLat = deg2rad(lat2 - lat1);  // deg2rad below
+          var dLon = deg2rad(lon2 - lon1);
+          var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
+                  Math.sin(dLon / 2) * Math.sin(dLon / 2);
+          var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+          var d = R * c; // Distance in km
+          return d;
+      }
+
+      function deg2rad(deg) {
+          return deg * (Math.PI / 180)
+      }
+
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+          sidemeu.style.right = "0";
+      }
+
+      function closemenu(){
+          sidemeu.style.right = "-100px";
+      }
+
+      // Function to open Google Maps with directions
+      function getDirections(lat, lng) {
+          var permanentLocation = {lat: 12.97, lng: 77.715}; // Example permanent location (Bangalore)
+          var directionsUrl = "https://www.google.com/maps/dir/?api=1&origin=" + lat + "," + lng + "&destination=" + permanentLocation.lat + "," + permanentLocation.lng;
+          window.open(directionsUrl);
+      }
+    </script>
+    <script>
+        function openWhatsAppChat() {
+            var whatsappNumber = '9391620139';
+            var whatsappUrl = 'whatsapp://send?phone=' + whatsappNumber;
+            if (isMobile()) {
+                window.open(whatsappUrl, '_blank');
+            } else {
+                window.open('https://web.whatsapp.com/send?phone=' + whatsappNumber, '_blank');
+            }
+        }
+
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+  
+        document.getElementById('whatsapp-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            openWhatsAppChat();
+        });
+      </script>
+      <script>
+      function openImageInLargerSize(imageSrc) {
+        // You can customize this function to open the image in a modal or a separate page
+        // For demonstration, let's open it in a new tab
+        window.open(imageSrc, '_blank');
+    }
+    
+    // Add event listeners to each image
+    document.querySelectorAll('.images-container img').forEach(image => {
+        image.addEventListener('click', function() {
+            var imageUrl = this.getAttribute('src');
+            openImageInLargerSize(imageUrl);
+        });
+    });
+</script>
+</body>
+</html>

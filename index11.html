@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jdktechnologies</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Century;
+        }
+        header {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(back.gif);
+          background-size: center;
+          background-position: center;
+          height: auto;
+      }
+       
+        nav {
+            display: flex;
+            padding: 1% 2%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0%;
+        }
+
+        nav img {
+            width: 150px;
+            margin-bottom: 0%;
+            size: 30%;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 17px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 18px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+        ul li a:hover {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: 20px;
+            margin-bottom: 10px;
+            size: 30px;
+        }
+
+        .title-container {
+            text-align: center;
+            margin-bottom: 8%;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .title-container h1 {
+            font-size: 50px;
+            font-style: initial;
+            color: rgb(249, 248, 248);
+            margin-top: 7%;
+            margin-bottom: 5%;
+            
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 20px;
+            background-color:transparent;
+            color: #fff;
+        }
+        .services-container :hover{
+            position: relative;
+            background-color: rgb(3, 44, 69);
+            color: #fff;
+        }
+
+        .service {
+            text-align: center;
+            width: 30%;
+            margin-bottom: 50px;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        nav .fa {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .title-container h1 {
+                font-size: 20px;
+                font-style: initial;
+                margin-bottom: 25px;
+                margin-left: 15px;
+            }
+
+            .title-container h2 {
+                color: rgb(249, 249, 249);
+                font-size: 14px;
+                font-style: italic;
+                margin-top: 8px;
+            }
+
+            nav .fa {
+                display: block;
+                font-size: 25px;
+                color: #fff;
+            }
+
+            nav ul {
+                float: right;
+                background: #4CAF50;
+                position: fixed;
+                top: 0;
+                right: -100px;
+                width: 100px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 1;
+                transition: right 0.5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 15px;
+                font-size: 12px;
+            }
+
+            nav ul .fa {
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <div class="logo-container">
+                    <a href="index.html"><img src="logo1.jpg"></a>
+                </div>
+                <div class="nav-links">
+                    <ul id="sidemenu">
+                        <li><a href="index10.html">Home</a></li>
+                        <li><a href="index11.html">Services</a></li>
+                        <li><a href="index12.html">About</a></li>
+                        <li><a href="index13.html">Contact</a></li>
+                        <i class="fa fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            
+            <section class="title-container">
+                <h1 class="main-title">Our Services</h1>
+                <p>We build robust digital solutions that will help you achieve the 
+                  efficiency and agility to fuel growth and business transformation.</p>
+            </section>
+            
+            <div class="services-container">
+                <div class="service">
+                    <img src="we.jpg" alt="Service 1" class="service-icon">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="service">
+                    <img src="mo.jpg" alt="Service 2" class="service-icon">
+                    <h3>Mobile App Development</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="service">
+                    <img src="da.jpg" alt="Service 3" class="service-icon">
+                    <h3>Data Analytics</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="service">
+                    <img src="ga.jpg" alt="Service 4" class="service-icon">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="service">
+                    <img src="seo.jpg" alt="Service 5" class="service-icon">
+                    <h3>SEO Optimization</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="service">
+                    <img src="co.jpg" alt="Service 6" class="service-icon">
+                    <h3>Cloud Computing</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            
+            <p class="copyright">&copy; 2024 WEB PRAROZ. All rights reserved.</p>
+        </section>
+    </header>   
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-100px";
+        }
+    </script>   
+</body>
+</html>
